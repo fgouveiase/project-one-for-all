@@ -92,7 +92,7 @@ CREATE TABLE historico (
     usuario_id	INT NOT NULL,
     cancoes_id INT NOT NULL,
     data_reproducao	DATETIME NOT NULL,
-    CONSTRAINT PRIMARY KEY (cancoes_id, usuario_id),
+    CONSTRAINT PRIMARY KEY (usuario_id, cancoes_id),
     CONSTRAINT FOREIGN KEY (usuario_id) REFERENCES usuario (usuario_id),
     CONSTRAINT FOREIGN KEY (cancoes_id) REFERENCES cancoes (cancoes_id)
 );
