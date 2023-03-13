@@ -23,8 +23,8 @@ CREATE TABLE plano (
 
 INSERT INTO plano (nome, valor_plano) VALUES
     ('gratuito', 0.00),
-    ('universitário', 5.99),
     ('familiar', 7.99),
+    ('universitário', 5.99),
     ('pessoal', 6.99);
 
 CREATE TABLE usuario 
